@@ -11,7 +11,7 @@
 \begin{document}
 
 %\begin{abstract}
-
+% NOT DONE
 %\end{abstract}
 
 
@@ -19,7 +19,7 @@
 \author{C. T. Rochelle}
 \email{ctr233@msstate.edu}
 \author{K. J. Grimes}
-\email{Katys@Email.edu}
+\email{kjg203@msstate.edu}
 \date{\today}
 \affiliation{Department of Physics and Astronomy\\Mississippi State University\\Mississippi State, MS 39762-5167}
 \date{\today}
@@ -29,44 +29,192 @@
 \section{Introduction}\label{Intro}
 % History of Magnetism
 In the past, magnetism was shrouded in mystery. 
-Unlike experiments involving classical mechanics, where objects interact with each other through visible and easily measurable interactions (i.e. collisions, steam, etc)\footnote{with a few notable exceptions like gravity}, experiments trying to understand magnetic phenomena were measuring and trying to describe events that could not be seen or felt.
+Unlike experiments involving classical mechanics, where objects interact with each other through visible and easily measurable interactions (i.e. collisions, steam, etc)\footnote{with a few notable exceptions like gravity}, experiments trying to understand magnetic phenomena were measuring and trying to describe events that could not be directly seen or felt.
 Because of this, electro-magnetic theory came about much later and more slowly than classical theories. 
 
-While the existence of magnets in compass needles and mysterious lodestones were known about by the Chinese and later European civilizations for thousands of years, it was only up until the turn of the 1st century CE that they were used for practical purposes, tracking shipping navigation\cite{History}.
+While the existence of magnets in compass needles and mysterious lodestones were known by the Chinese and later European civilizations for thousands of years, it was only up until the turn of the 1st century CE that they were used for practical purposes, tracking shipping navigation\cite{History}.
 It was only until the 16 and 1700s when the first explanations and experiments of magnetism had begun. 
-Later on in the 20th century, non ferro-magnets began to be created and since magnetic theory was more advanced, they began to be harnessed in devices that we use every day. 
+Later on in the 20th century, non ferro-magnets began to be created and because magnetic theory was more advanced, they began to be harnessed in devices that we use every day, such as computers and cellphones.
  
 % History of Magnetic Torque 
-
+During the initial scientific development of magnetism and electricity, one important relationship was discovered.
+If a loop of electricity was placed in a magnetic field, it would be begin rotate with a force dependent on the strength of field and the current in the loop. 
+This is because a loop of electricity produces a magnetic field which interacts with the field in certain alignments. 
+In a likewise manner, a magnet placed in a magnetic field will experience some torque to align with the field. 
 
 
 % History of Hemholtz Coils
+Hemholtz coils were theorized by Hermann von Halmholts in the 1800s as a device that could produce a nearly uniform magnetic field in some region \ref{hemcoil}. 
+They are made by winding a pair of conducting wires into coils and separating them by the same distance as the radius of the coils.
+When electricity is passed through the coils a nearly uniform magnetic field is produced between the coils. 
+In this experiment we use these Helmholtz coils to produce a magnetic torque on a snooker ball which is measured in various ways. 
 
 
 \section{Theory}\label{Theory}
 % Derivation of Common Formulas Used in Experiments
+Since this paper about Magnetic Torque consists of five different experiments, that all use different physical equations, we will discuss them one-by-one, each in their own paragraph. 
+All experiments covered within this paper involve the use of Helmholtz coils, so we will cover them theoretically before diving into the specifics of each experiment. 
+Helmholtz coils are a pair of circular coils separated from each other by a distance equal to the radius of each loop. 
+Each coil has the same amount of turns of conducting wires that each carry the same current. 
+The notable fact about Helmholtz coils is that when current is passed through the two coils, a near uniform field is created in the space between the two coils. 
+The field strength maintained in the center of the coils goes as
+\begin{equation}
+    B=\left(\frac{4}{5}\right) ^{3/2}\frac{\mu_0nI}{R}
+\end{equation}
+where $\mu_0$ is the permittivity of free space, $n$ is the number of turns in the coils, $I$ is the current, and $R$ is the distance between the two coils (also the radius of the coils).
+The magnetic field is created perpendicularly to the current flow throughout the Helmholtz system. 
 
-% Theory of Hemholtz Coils
+% Experiment 1
+In experiment 1, we deal with magnetic versus gravitation torque acting on the snooker ball system.
+When the snooker ball balances perpendicularly to the ground, the gravitational and magnetic torques will be equal, given by
+\begin{equation*}
+    \tau_{B}=\tau_{gravity}
+\end{equation*}.
+$\tau_{gravity}$ involves both the torque from the rod and the slider mass, and these could be reduced further to
+\begin{align*}
+    \tau_{B}&=\tau_{slider}+\tau_{rod}\\
+    \mu_0 B&=(\va{r}_{slider}\times m_{slider}+\va{r}_{rod}\times m_{rod})\va{g}
+\end{align*}.
+Since gravity will be perpendicular to the radius, we can reduce the cross products to multiplication and solve for $\va{r}_{slider}$.
+\begin{equation*}
+    r_{slider}=\frac{\mu_0 B-r_{rod}m_{rod}g}{m_{slider}g}
+\end{equation*}
+Plugging in for $B$ we see where the slider mass needs to be positioned to balance the torques for a certain $I$.
+\begin{equation}
+    r_{slider}=\left(\frac{4}{5}\right) ^{3/2} \frac{nI}{R}-\frac{r_{rod}m_{rod}}{m_{slider}}
+\end{equation}.
+
+% Experiment 2
+In experiment 2, we deal with a spherical pendulum under the effects of a magnetic field. 
+Since the magnetic field will cause some torque on the system, the period of the snooker ball will be affected.
+The period of a spherical oscillator under a magnetic field goes as
+\begin{equation*}
+    T=2\pi\sqrt{\frac{I_{cm}}{\mu_0 B}}
+\end{equation*}.
+Since we are dealing with the snooker ball system, we can use the equation of inertia for a sphere
+\begin{equation*}
+    I_{cm}=\frac{2}{5}mr^2
+\end{equation*}.
+Substituting this in, solving for $T^2$, because we would like to see a linear relationship, and substituting $B$ for the Helmholtz equation, we get the dependence of the square of the period by the current.
+\begin{equation}
+    T^2=\sqrt{5}\pi^2\frac{mr^2R}{\mu_0^2nI}
+\end{equation}
+
+% Experiment 3
+In experiment 3, we are trying to determine the relationship between the processional frequency of the snooker ball and the current applied to the Helmholtz coils. 
+Let us start by looking at the equation for torque
+\begin{equation*}
+    \tau_{snooker}=\dv{L}{t}
+\end{equation*}.
+We know that the angular momentum, $L$, of the snooker ball goes as 
+\begin{equation*}
+    L_{snooker}=I_{snooker}\omega
+\end{equation*}.
+However, another way to look at $\dv{L}{t}$ is through the procession of the snooker ball, which we will call $\Omega_p$.
+If the time difference between measurements of $\dv{L}{t}$ was equal to the time of one whole procession
+\begin{equation*}
+    \dv{L}{t}=\Omega_pL
+\end{equation*},
+we can substitute into the original equation to get
+\begin{equation*}
+    \mu_0 \times B=\Omega_pL
+\end{equation*}
+Since we are making one full procession, the cross product can be replaced with regular multiplication.
+Solving for $\Omega_p$ and substituting for $B$ gives the final equation
+\begin{equation}
+    \Omega_p=\left(\frac{4}{5}\right) ^{3/2}\frac{\mu_0^2nI}{RL}
+\end{equation}.
+
+% Hall Effect
+In measuring the Hall Effect, we are looking to see the relationship between the magnetic field created by the snooker ball and its strength at different distances from the system. 
+One important note about this experiment is that we used a field gradient instead of the regular field created by the Helmholtz coils.
+This means that the direction of the currents were opposite in the two different coils;
+so, the field was not completely uniform throughout the system, it was a gradient.
+The math is a simple use of the Biot-Savart law, where $r$ is the radius of the Helmholtz coils.
+\begin{equation*}
+    B_z=\frac{\mu_0Ir^2}{2(r^2+z^2)^{3/2}}
+\end{equation*}
+Since we are looking outside the steady region of the coils, we are looking in the far-field and can assume $z\||r$ and condense the formula to
+\begin{equation*}
+    B_z=\frac{\mu_0Ir^2}{2z^3}
+\end{equation*}.
+Since we know the field is generated from the magnetic dipole inside the snooker ball, we know $I\pi r^2=\mu_0$.
+Therefore, we can combine everything into the final equation of 
+\begin{equation}
+    B_z=\frac{\mu_0^2}{2z^3}
+\end{equation}.
+
+% Moment with Spring
+In determining the Magnetic Moment using the spring we are looking for the relationship between the change in spring distance and the current applied to the Helmholtz coils.
+The starting equation is
+\begin{equation*}
+    F_k=F_B
+\end{equation*}.
+The force applied to a spring is given as $F_k=kx$, where $k$ is the spring constant and $x$ is the change is distance due to the force. 
+The force applied by the magnetic field is given by
+\begin{equation*}
+    F_B=\mu_0\dv{B}{r}
+\end{equation*},
+where $r$ is the direction the spring moves.
+We can now substitute and rearrange to get
+\begin{equation}
+    x=\frac{\mu_0}{k}\dv{B}{r}
+\end{equation}.
+
+% Balancing the Mass
+%This makes no sense help me Katy
 
 \section{Experiment}
 % General Overview of All Experiments
 % The Device
-The magnetic torque instrument, pictured in Figure \ref{device}, consists of mounted Hemholtz coils with a brass air bearing holding a snooker ball in the middle of the field. 
+The magnetic torque instrument, pictured in Figure \ref{device}, consists of mounted Hemholtz coils with a brass air bearing holding a snooker ball in the middle of the generated field. 
 The mounted coils are connected to a control box, pictured in Figure \ref{controlBox}, and to an outside air source to allow the snooker ball to be suspended in the bearing. 
-The control box controls the current being fed to the coils, a controllable flashing LED mounted the coils, the direction of the field, and if the field has a gradient. 
-The snooker ball, pictured in Figure \ref{snooker}, 
+The control box controls the current being fed to the coils, a controllable flashing LED mounted to the coils, the direction of the field, and if the field has a gradient. 
+The snooker ball, pictured in Figure \ref{snooker}, has a magnet in its core that forces it to interact with the magnetic field the Helmholtz coils create.
+On the top side of the helmholtz coils also sits a hinge that a lever can be slotted into. 
 
 % Experiment 1
+In experiment 1, we placed a rod and circular disk of known weights into the handle of the snooker ball. 
+With the field and air on, allowing the snooker ball to freely move in its holder according to the effects of the field, we adjusted the field strength to allow the rod and disk to be balanced perpendicularly in opposition to gravity. 
+After finding the first current measurement, with the disk being closed to the center of the snooker ball, we slowly moved the disk further away from the center with each successive measurement to determine the change in field required to rebalance the system.
 
 % Experiment 2
+In experiment 2, we placed the same rod used in the first experiment back into the handle ontop the snooker ball, turned the air on, and set the current supplied to the Helmholtz coils to maximum (around 4amps). 
+With the snooker ball allowed to freely move in the air bearing, we tilted it, using the rod, to about a 15 degree angle from straight up. 
+We let go of the rod and allowed the snooker ball to oscillate.
+We observed and recorded these oscillations for a minute. 
+We slightly lowered the current applied to the coils, reset the initial angle to around 15 degrees and measured the new period values.
+We repeated this until the current was lowered to zero. 
 
 % Experiment 3
+In experiment 3, we started by taking the rod used in the last two experiments and wrapped a string around it.
+We then inserted the rod into the snooker ball handle and turned on the air. 
+Since this next section revolved around using the strobe light mounted on top of the Helmholtz coils, we turned the lights off in the room. 
+With the air on and current set to maximum, we pulled the string while holding the top of the rod to induce a fast spin on the snooker ball.
+To measure the rate of rotation, we used the strobe light to look for the white dot on top of the handle. 
+When the frequency the strobe was flashing lines up with the rate at which the ball was spinning, the dot will appear to be still because it will only be illuminated when the light flashes in sync. 
+With the frequency of rotation recorded, we used our finger nails to tilt the snooker ball to around 15 degrees from neutral and timed the procession of the ball for one full rotation.
+We then repeated the following setup again with only decreasing the current with each successive measurement. 
 
 % Hall Effect
+In measuring the Hall Effect, we turned off the air and placed the snooker ball directly on its side in the air bearing.
+We created a stack of papers and books to tape a magnetic field probe on (effectively the Hall Probe) and placed this apparatus close to the tip of the snooker ball. 
+We set the current of the Helmholtz coils to a known value and measured the field produced from the snooker ball.
+We slowly moved the Hall Probe further away from the snooker ball, recording the distance from the ball and the measured field strength each time. 
+When the field was too weak to be read by the Hall Probe, we stopped measurement.
 
 % Moment with Spring
+In measuring the magnetic moment on a spring, we started by measuring the spring constant associated with the spring system we were using by adding mass to the spring and observing the change in distance. 
+Once the spring constant was known, we mounted the tube the spring is in on the air bearing. 
+We then turned the field gradient on. 
+With zero current, we measured the distance of the rod coming out of the spring holder and marked on the tube where the magnet was located.
+At increasing currents, we measured the force applied to the magnet by moving the magnet to the starting location and measuring the the offset in the amount of rod coming out of the spring system.
 
 % Balancing the Mass
+In balancing the snooker ball with the lever, we needed to use the hinge at the top of the Hemholtz coils.
+On one end of the lever was a string that ended with a black cap that could be fitted onto the handle of the snooker ball and on the other end was another string that had a piece to add cylindrical masses to. 
+With the lever fitted in place, we made sure the field gradient was set to on and observed that the snooker ball was affected by the field generated by the Helmholtz coils.
+Starting from zero current and going up, we observed and recorded the amount of mass needed to balance the level at different current values. 
 
 \section{Data Analysis}
 % Explain the Results 
@@ -80,8 +228,8 @@ The snooker ball, pictured in Figure \ref{snooker},
 
 
 %\begin{thebibliography}{9}
-%\bibitem{NIST} \textit{speed of light in vacuum} (National Institute of Standards and Technology, May 4, 2022).
 %\bibitem{History} \textit{A Brief History} {https://www.magnetic-magnets.co.nz/technical/A-Brief-History.html}
+%\bibitem{hemcoil} \textit{Helmgoltz Coils} {https://physicsx.erau.edu/HelmholtzCoils/index.html}
 %\end{thebibliography}
 
 \end{document}
