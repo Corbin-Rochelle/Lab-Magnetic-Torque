@@ -10,38 +10,27 @@ the goal was to take ideas from electromagnetism and watch them happen in real l
 
 ## 🌸 what this project looks at
 
-how helmholtz coils create a nearly uniform magnetic field
-
-how a magnetic dipole tries to align with that field
-
-the balance between magnetic torque and gravity
-
-how magnetic fields affect:
-
-oscillations
-
-precession
-
-measured field strength (hall effect)
-
-forces on a spring
+- how helmholtz coils create a nearly uniform magnetic field
+- how a magnetic dipole tries to align with that field
+- the balance between magnetic torque and gravity
+- how magnetic fields affect:
+  - oscillations
+  - precession
+  - measured field strength (hall effect)
+  - forces on a spring
 
 different setups, same core idea:
-magnetic fields can apply real, measurable forces.
+*magnetic fields can apply real, measurable forces.*
 
 ---
 
 ## 🌱 what i learned
 
-theory makes way more sense when you can see it
-
-the same magnetic moment shows up across many experiments
-
-careful measurements matter (a lot)
-
-lab work is basically debugging… but for physics 🧠💻
-
-progress > perfection ✨
+- theory makes way more sense when you can see it
+- the same magnetic moment shows up across many experiments
+- careful measurements matter (a lot)
+- lab work is basically debugging… but for physics 🧠💻
+- progress > perfection ✨
 
 this lab helped me connect equations to experiments, build confidence with data analysis, and appreciate how much learning happens through trial, error, and curiosity.
 
